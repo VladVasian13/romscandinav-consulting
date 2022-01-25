@@ -1,0 +1,139 @@
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "text text  text text"
+    "callus contact contact contact"
+    "social-media contact contact contact";
+  padding: 50px;
+}
+
+.text-image {
+  display: grid;
+  grid-template-rows: 2fr;
+  background: red;
+  grid-area: text;
+}
+
+.callus {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: callus;
+}
+
+.social-media {
+  grid-area: social-media;
+}
+
+.contact-form {
+  grid-area: contact;
+}
+
+.callus .callus-box {
+  position: relative;
+  width: 80vh;
+  height: 180px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 215, 215);
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  max-height: 230px;
+}
+
+.phone-icon {
+  position: absolute;
+  font-size: 70px;
+  left: 10%;
+  border: 10px solid orangered;
+  border-radius: 50%;
+  padding: 20px;
+  color: orangered;
+}
+
+.callus .callus-box h1 {
+  font-size: 25px;
+  margin: 10px;
+  font-weight: 400;
+}
+
+.callus .callus-box h2 {
+  margin: 0px 0px 10px 20px;
+  font-weight: 800;
+}
+
+.phone-numbers {
+  color: #3560ca;
+}
+
+.social-media .social-media-box {
+  position: relative;
+  width: 80vh;
+  height: 180px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 215, 215);
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form .contact-form-box {
+  position: relative;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 215, 215);
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-list li {
+  margin: 5px 10px 5px 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.social-list li i {
+  font-size: 35px;
+  padding: 5px;
+}
+
+.social-list li a:hover {
+  color: rgb(75, 73, 73);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.fb {
+  color: #3b5998;
+}
+
+.tw {
+  color: #00acee;
+}
+
+.ld {
+  color: #0077b5;
+}

@@ -2,9 +2,9 @@ import './App.css';
 import { Routes,Route } from 'react-router-dom';
 
 import NavBar from './components/navbar/navbar';
-import HomePage from './pages/homepage';
+import HomePage from './pages/homepage/homepage';
 import AboutUs from './pages/aboutus';
-import Contact from './pages/contactus';
+import Contact from './pages/contactus/contactus';
 
 
 function App() {
