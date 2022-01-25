@@ -2,23 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 100px;
+  margin: 0px 120px;
   cursor: pointer;
 }
 .languages h2 {
   font-size: 0.9rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 400;
   margin: 10px;
   color: white;
+  user-select: none;
 }
 
 .language {
-  color: rgba(112, 199, 112, 0.507);
+  color: rgb(112, 199, 112);
 }
 
 .language-arrow {
-  color: rgba(112, 199, 112, 0.507);
+  color: rgb(112, 199, 112);
   margin: 5px;
   font-size: 10px;
 }
@@ -26,40 +27,47 @@
 .popup-language {
   position: absolute;
   width: 170px;
-  height: 120px;
-  background: linear-gradient(
-    90deg,
-    rgb(25, 23, 49) 0%,
-    rgba(6, 6, 34, 1) 52%,
-    rgba(33, 60, 65, 1) 100%
-  );
+  height: 140px;
+  background: rgb(25, 23, 49);
   top: 50px;
-  right: 100px;
+  right: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   border: none;
   border-radius: 10px;
+  box-shadow: 1px 2px 7px 3px rgb(31, 28, 28);
 }
 
 .popup-language button {
-  width: 90px;
+  width: 100px;
   height: 40px;
   border-radius: 10px;
   border: none;
-  background-color: rgb(19, 143, 130);
+  background-color: tomato;
   color: white;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
+  box-shadow: 1px 2px 4px -1px rgba(255, 251, 251, 0.64);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .popup-language button:hover {
-  color: black;
-  background-color: rgb(88, 175, 166);
+  color: white;
+  background-color: rgb(187, 71, 53);
+  transition: all 0.3s ease-in-out;
 }
 
 .hidden {
   display: none;
+}
+
+.svgImg {
+  width: 20px;
+  height: 20px;
 }
