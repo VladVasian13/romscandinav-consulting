@@ -1,80 +1,36 @@
 .grid {
-  display: grid;
+  display: flex;
   width: 100%;
   height: 100%;
-  grid-template-areas:
-    "text text  text text"
-    "callus contact contact contact"
-    "social-media contact contact contact";
   padding: 50px;
 }
 
-.text-image {
-  display: grid;
-  grid-template-rows: 2fr;
-  background: red;
-  grid-area: text;
+.flex-row {
+  flex-direction: row;
+  display: flex;
 }
 
-.callus {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-area: callus;
-}
-
-.social-media {
-  grid-area: social-media;
-}
-
-.contact-form {
-  grid-area: contact;
+.flex-column {
+  flex-direction: column;
+  display: flex;
 }
 
 .callus .callus-box {
   position: relative;
-  width: 80vh;
-  height: 180px;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(221, 215, 215);
   margin: 30px;
   padding: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-  max-height: 230px;
-}
-
-.phone-icon {
-  position: absolute;
-  font-size: 70px;
-  left: 10%;
-  border: 10px solid orangered;
-  border-radius: 50%;
-  padding: 20px;
-  color: orangered;
-}
-
-.callus .callus-box h1 {
-  font-size: 25px;
-  margin: 10px;
-  font-weight: 400;
-}
-
-.callus .callus-box h2 {
-  margin: 0px 0px 10px 20px;
-  font-weight: 800;
-}
-
-.phone-numbers {
-  color: #3560ca;
+  border-radius: 3rem;
 }
 
 .social-media .social-media-box {
   position: relative;
-  width: 80vh;
-  height: 180px;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(221, 215, 215);
   margin: 30px;
@@ -83,6 +39,7 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
 }
 
 .contact-form .contact-form-box {
@@ -95,7 +52,31 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
-  height: 100%;
+  border-radius: 3rem;
+}
+
+.phone-icon {
+  font-size: 70px;
+  border: 10px solid orangered;
+  border-radius: 50%;
+  padding: 20px;
+  margin-right: 50px;
+  color: orangered;
+}
+
+.callus .callus-box h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.callus .callus-box h2 {
+  font-weight: 800;
+  padding: 10px 0px 10px 0px;
+}
+
+.callus .callus-box h2 a {
+  text-decoration: none;
+  color: #3560ca;
 }
 
 .social-list {
@@ -117,7 +98,7 @@
 }
 
 .social-list li a:hover {
-  color: rgb(75, 73, 73);
+  color: rgb(70, 70, 70);
   transition: all 0.3s ease-in-out;
 }
 
@@ -136,4 +117,23 @@
 
 .ld {
   color: #0077b5;
+}
+
+.formular {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.description {
+  width: 60%;
+  text-align: center;
 }

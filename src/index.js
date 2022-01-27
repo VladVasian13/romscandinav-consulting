@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 ReactDOM.render(
- <Suspense fallback="...">
+ <Suspense fallback="Loading...">
    <BrowserRouter>
     <React.StrictMode>
       <App />
