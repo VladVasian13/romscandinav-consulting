@@ -1,6 +1,7 @@
 import React from "react";
 import InputForm from "../../components/forms/input-form";
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 import "./contactus.css";
 
@@ -139,6 +140,11 @@ const Contact = () => {
                   multiline
                   rows={6}
                 />
+              </div>
+              <div className="div-button">
+                <Button variant="outlined" className="form-button">
+                  Submit
+                </Button>
               </div>
             </form>
           </div>

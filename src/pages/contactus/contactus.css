@@ -137,3 +137,14 @@
   width: 60%;
   text-align: center;
 }
+
+.form-button {
+  width: 20%;
+  font-size: 20px !important;
+}
+
+.div-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

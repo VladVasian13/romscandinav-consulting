@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./input-form.css";
 import TextField from "@mui/material/TextField";
 
-const InputForm = ({ label, placeholder, type, clasa }) => {
-  let test = (e) => {
+const InputForm = ({ placeholder, type, clasa }) => {
+  const [errored, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  let maxLength = (e) => {
     if (e.target.value.length > 40) {
+      setError(true);
+      setErrorMessage("The maximum lenght must be 40 characters");
+    } else {
+      setError(false);
+      setErrorMessage("");
     }
   };
 
@@ -13,12 +21,12 @@ const InputForm = ({ label, placeholder, type, clasa }) => {
     <div className="input-div">
       <TextField
         className={clasa}
-        onChange={test}
+        onChange={maxLength}
         label={placeholder}
         type={type}
         variant="outlined"
-        helperText="The maximum lenght must be 40 characters"
-        error={true}
+        helperText={errorMessage}
+        error={errored}
         required
       />
     </div>
