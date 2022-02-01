@@ -24,8 +24,8 @@ const NavBar = () => {
             <Link to="/contact">{t("contact")} </Link>
           </li>
         </ul>
+        <LanguageSelect />
       </div>
-      <LanguageSelect />
     </nav>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import InputForm from "../../components/forms/input-form";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -6,6 +6,10 @@ import Button from "@mui/material/Button";
 import "./contactus.css";
 
 const Contact = () => {
+  const [isDisabled, disable] = useState(false);
+  const sendDataToParent = (index) => {
+    disable(index);
+  };
   return (
     <div className="grid">
       <div className="flex-column">
@@ -67,6 +71,18 @@ const Contact = () => {
             </ul>
           </div>
         </div>
+        <div className="social-media">
+          <div className="social-media-box">
+            <h3>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              praesentium architecto possimus vero aperiam vero veroo neque
+              molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellat praesentium architecto possimus vero aperiam vero veroo
+              neque molestiae.{" "}
+            </h3>
+          </div>
+        </div>
       </div>
       <div className="flex-row">
         <div className="contact-form">
@@ -86,6 +102,7 @@ const Contact = () => {
                       placeholder="First Name"
                       type="text"
                       clasa="input-contact"
+                      sendDataToParent={sendDataToParent}
                     />
                   </div>
                   <div>
@@ -142,7 +159,11 @@ const Contact = () => {
                 />
               </div>
               <div className="div-button">
-                <Button variant="outlined" className="form-button">
+                <Button
+                  variant="outlined"
+                  className="form-button"
+                  disabled={isDisabled}
+                >
                   Submit
                 </Button>
               </div>

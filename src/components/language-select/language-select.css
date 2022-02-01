@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 120px;
+  margin: 0px 30px;
   cursor: pointer;
 }
 .languages h2 {
@@ -10,16 +10,16 @@
   letter-spacing: 1px;
   font-weight: 400;
   margin: 10px;
-  color: white;
+  color: black;
   user-select: none;
 }
 
 .language {
-  color: rgb(112, 199, 112);
+  color: black;
 }
 
 .language-arrow {
-  color: rgb(112, 199, 112);
+  color: black;
   margin: 5px;
   font-size: 10px;
 }
@@ -28,9 +28,8 @@
   position: absolute;
   width: 170px;
   height: 140px;
-  background: rgb(25, 23, 49);
   top: 50px;
-  right: 120px;
+  right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,26 +40,47 @@
   z-index: 1;
 }
 
+.popup-language:before {
+  content: "";
+  position: absolute;
+  opacity: 0.6;
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #f7f7f7,
+    #efefef,
+    #e8e8e8,
+    #e0e0e0,
+    #dfdfdf,
+    #dfdfdf,
+    #dedede,
+    #e4e4e4,
+    #ebebeb,
+    #f1f1f1,
+    #f8f8f8
+  );
+}
+
 .popup-language button {
   width: 100px;
   height: 40px;
   border-radius: 10px;
   border: none;
-  background-color: tomato;
+  background-color: rgb(97, 97, 97);
   color: white;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
   box-shadow: 1px 2px 4px -1px rgba(37, 37, 37, 0.64);
-
   display: flex;
   align-items: center;
   justify-content: space-around;
+  opacity: 1;
 }
 
 .popup-language button:hover {
   color: white;
-  background-color: rgb(187, 71, 53);
+  background-color: #000000;
   transition: all 0.3s ease-in-out;
 }
 
