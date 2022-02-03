@@ -1,0 +1,60 @@
+.footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(212, 212, 212);
+}
+
+.policies {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.link-policies {
+  color: grey;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+
+.policies h2 {
+  font-size: 1rem;
+  padding: 0px 10px;
+  color: black;
+}
+
+.policies h2 i {
+  padding-right: 10px;
+}
+
+.policies h5 {
+  font-size: 0.7rem;
+  color: grey;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.informations {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.get-in-touch {
+  margin-right: 3rem;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.address {
+  margin-right: 3rem;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.footer-title {
+  color: black;
+}

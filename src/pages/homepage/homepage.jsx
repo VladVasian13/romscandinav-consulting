@@ -13,7 +13,10 @@ const HomePage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam non,
             quae esse ipsam ratione nulla!
           </h3>
-          <button className="home-button"> SUBSCRIBE NOW</button>
+          <button className="home-button">
+            {" "}
+            <span> SUBSCRIBE NOW</span>
+          </button>
         </div>
         <div className="presentation info">
           <h2>
