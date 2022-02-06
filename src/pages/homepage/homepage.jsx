@@ -1,20 +1,19 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 import "./homepage.css";
 import Video from "../../assets/videos/video.mp4";
 
 const HomePage = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="home-slider">
         <div className="presentation">
           <h1 className="home-title">Romscandinav Consulting</h1>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam non,
-            quae esse ipsam ratione nulla!
-          </h3>
+          <h3>{t("welcomeText")}</h3>
           <button className="home-button">
-            {" "}
             <span> SUBSCRIBE NOW</span>
           </button>
         </div>
