@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="policies">
         <h2>
           {" "}
-          <i class="fas fa-copyright"></i>ROMSCANDINAV CONSULTING
+          <i className="fas fa-copyright"></i>ROMSCANDINAV CONSULTING
         </h2>
         <Link to="/" className="link-policies">
           Privacy Notice

@@ -3,7 +3,8 @@
   height: 40vh;
   background: #acacac;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
 }
 
 .presentation {
@@ -11,26 +12,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 15px;
+}
+
+.presentation h3 {
+  text-align: center;
 }
 
 .section-two {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .animation-info {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 1rem;
   font-size: 10px;
-  max-width: 30%;
+  max-width: 40%;
+  margin: auto auto auto 0;
 }
 
 .info {
   max-width: 35%;
   font-size: 0.8rem;
+}
+
+.info h2 {
+  text-align: center;
 }
 
 .home-title {
@@ -83,4 +92,30 @@
 
 .first-animation {
   padding: 2rem;
+  margin: auto 0 auto auto;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+  .home-slider {
+    flex-direction: column;
+    height: 50vh;
+  }
+  .info {
+    max-width: 80%;
+  }
+
+  .section-two {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-animation {
+    margin: 0;
+  }
+  .animation-info {
+    margin: 0;
+    max-width: 80%;
+  }
 }

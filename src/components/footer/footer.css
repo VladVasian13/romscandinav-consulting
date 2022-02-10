@@ -53,8 +53,18 @@
   margin-right: 3rem;
   font-size: 0.8rem;
   color: grey;
+  width: 100%;
 }
 
 .footer-title {
   color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .policies {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+  }
 }
