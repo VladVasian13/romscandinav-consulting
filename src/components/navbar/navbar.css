@@ -72,7 +72,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  width: 50%;
+  width: 60%;
   height: 100%;
   background: black;
   opacity: 0.9;
@@ -87,7 +87,7 @@
 }
 
 .hidden {
-  right: -50%;
+  right: -60%;
   transition: all 1s ease;
 }
 
