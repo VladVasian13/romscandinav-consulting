@@ -61,10 +61,23 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .policies {
+  .footer {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .footer {
+    flex-direction: column;
+  }
+  .address {
     display: none;
   }
-  .footer {
-    justify-content: center;
+  .get-in-touch {
+    display: none;
+  }
+
+  .policies {
+    flex-direction: column;
   }
 }

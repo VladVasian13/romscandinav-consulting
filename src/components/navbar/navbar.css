@@ -82,6 +82,7 @@
 }
 
 .burger-color {
+  position: relative;
   color: white;
   transition: all 1s ease;
 }
@@ -91,6 +92,13 @@
   transition: all 1s ease;
 }
 
+.drawer {
+  position: absolute;
+}
+
+.fixedMenu {
+  display: flex;
+}
 /* Responsive */
 
 @media only screen and (max-width: 900px) {
@@ -106,6 +114,7 @@
 
   .navbar-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3rem;
@@ -124,13 +133,56 @@
     margin: 20px;
     font-size: 1.7rem;
     letter-spacing: 0px;
-    margin: 60px 0px;
+    margin: 2rem 0px;
   }
 
   .navbar-list-burger li a {
     text-decoration: none;
     color: white;
-    font-size: 2.3rem;
+    font-size: 1.2rem;
     position: relative;
+  }
+
+  .drawer {
+    right: 0;
+  }
+
+  .fixedMenu {
+    display: none;
+  }
+
+  .popup-language {
+    top: 40px;
+    right: -40px;
+    box-shadow: 0px 0px 0px rgb(31 28 28);
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .navbar-burger {
+    margin: 0.6rem;
+  }
+
+  .languages {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .languages h2 {
+    color: white;
+  }
+  .language {
+    color: white;
+  }
+
+  .language-arrow {
+    color: white;
+  }
+
+  .popup-language button:hover {
+    color: white;
+    background-color: #464646;
   }
 }

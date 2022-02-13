@@ -1,4 +1,5 @@
 .languages {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,8 +29,8 @@
   position: absolute;
   width: 170px;
   height: 140px;
-  top: 50px;
-  right: 30px;
+  top: 60px;
+  right: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;

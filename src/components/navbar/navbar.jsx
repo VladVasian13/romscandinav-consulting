@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "../language-select/language-select";
 import "./navbar.css";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
+import Navigation from "../navigation/navigation";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -18,45 +19,32 @@ const NavBar = () => {
       changeIt("");
     }
   };
+  const handleClickAway = () => {
+    openIt("hidden");
+    changeIt("");
+  };
 
   return (
     <nav className="navbar">
       <div>
         <h1 className="logo"> ROMSCANDINAV CONS.</h1>
       </div>
-      <div className="navbar-items">
-        <ul className="navbar-list">
-          <li>
-            <Link to="/"> {t("home")} </Link>
-          </li>
-          <li>
-            <Link to="/aboutus"> {t("aboutUs")} </Link>
-          </li>
-          <li>
-            <Link to="/contact">{t("contact")} </Link>
-          </li>
-        </ul>
+
+      <div className="fixedMenu">
+        <Navigation styleClass="" />
         <LanguageSelect />
       </div>
-      <div className={`navbar-burger ` + changeColor} onClick={openNav}>
-        <i className="fas fa-bars"></i>
-      </div>
-      <div className={`navbar-container ` + isOpened}>
-        <div className="navbar-items-burger">
-          <ul className="navbar-list-burger">
-            <li>
-              <Link to="/"> {t("home")} </Link>
-            </li>
-            <li>
-              <Link to="/aboutus"> {t("aboutUs")} </Link>
-            </li>
-            <li>
-              <Link to="/contact">{t("contact")} </Link>
-            </li>
-          </ul>
-          <LanguageSelect />
+      <ClickAwayListener onClickAway={handleClickAway}>
+        <div className="drawer">
+          <div className={`navbar-burger ` + changeColor} onClick={openNav}>
+            <i className="fas fa-bars"></i>
+          </div>
+          <div className={`navbar-container ` + isOpened}>
+            <Navigation styleClass="-burger" />
+            <LanguageSelect />
+          </div>
         </div>
-      </div>
+      </ClickAwayListener>
     </nav>
   );
 };
