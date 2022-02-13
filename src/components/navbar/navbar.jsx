@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import LanguageSelect from "../language-select/language-select";
 import "./navbar.css";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Navigation from "../navigation/navigation";
 
 const NavBar = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [isOpened, openIt] = useState("hidden");
   const [changeColor, changeIt] = useState("");
   const openNav = () => {
