@@ -3,7 +3,6 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 50px;
 }
 
 .flex-row {
@@ -14,6 +13,7 @@
 .flex-column {
   flex-direction: column;
   display: flex;
+  width: 35%;
 }
 
 .callus .callus-box {
@@ -47,8 +47,8 @@
   position: relative;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(221, 215, 215);
-  margin: 30px;
-  padding: 30px;
+  margin: 2rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,17 +57,17 @@
 }
 
 .phone-icon {
-  font-size: 70px;
-  border: 10px solid orangered;
+  font-size: 1.5rem;
+  border: 0.2rem solid orangered;
   border-radius: 50%;
-  padding: 20px;
-  margin-right: 50px;
+  padding: 1rem;
+  margin-right: 1rem;
   color: orangered;
 }
 
 .callus .callus-box h1 {
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 .callus .callus-box h2 {
@@ -78,6 +78,7 @@
 .callus .callus-box h2 a {
   text-decoration: none;
   color: #3560ca;
+  font-size: 20px;
 }
 
 .social-list {
@@ -120,13 +121,24 @@
   color: #0077b5;
 }
 
+.form-col1 {
+  width: 100%;
+}
+
+.form-col2 {
+  width: 100%;
+}
+
 .formular {
   display: flex;
   flex-direction: column;
+  width: 90%;
 }
 
 .inputs {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -140,7 +152,7 @@
 }
 
 .form-button {
-  width: 20%;
+  width: 30%;
   font-size: 20px !important;
 }
 
@@ -148,4 +160,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid {
+    flex-direction: column-reverse;
+  }
+  .flex-column {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .inputs {
+    flex-direction: column;
+  }
+  .description {
+    width: 100%;
+  }
+
+  .formular {
+    width: 100%;
+  }
 }

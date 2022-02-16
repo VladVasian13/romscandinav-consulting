@@ -16,18 +16,15 @@ const Contact = () => {
         <div className="callus">
           <div className="callus-box">
             <div>
-              <i className="fas fa-phone phone-icon"></i>
-            </div>
-            <div>
               <h1>Call us directy at :</h1>
               <h2>
-                SWE:{" "}
+                <i className="fas fa-phone phone-icon"></i>SWE:{" "}
                 <span className="phone-numbers">
                   <a href="tel:+40 753 222 433">+333 2 222 4433</a>
                 </span>
               </h2>
               <h2>
-                ROU:{" "}
+                <i className="fas fa-phone phone-icon"></i>ROU:{" "}
                 <span className="phone-numbers">
                   <a href="tel:+40 753 222 433">+40 753 222 433 </a>
                 </span>
@@ -69,18 +66,6 @@ const Contact = () => {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div className="social-media">
-          <div className="social-media-box">
-            <h3>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              praesentium architecto possimus vero aperiam vero veroo neque
-              molestiae.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellat praesentium architecto possimus vero aperiam vero veroo
-              neque molestiae.{" "}
-            </h3>
           </div>
         </div>
       </div>
