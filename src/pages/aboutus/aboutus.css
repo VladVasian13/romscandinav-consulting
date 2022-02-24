@@ -53,3 +53,12 @@
   height: 40%;
   border-radius: 5%;
 }
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 100%;
+  }
+}
