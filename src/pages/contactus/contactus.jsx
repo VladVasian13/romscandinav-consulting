@@ -78,7 +78,7 @@ const Contact = () => {
               To schedule time to speak with one of our sales
               representatives,complete the form and then click submit.
             </h3>
-            <form className="formular">
+            <form className="formular" name="contact" method="post" data-netlify="true">
               <div className="inputs">
                 <div className="form-col1">
                   <div>
