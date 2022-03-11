@@ -148,6 +148,7 @@ const Contact = () => {
                   variant="outlined"
                   className="form-button"
                   disabled={isDisabled}
+                  type="submit"
                 >
                   Submit
                 </Button>
