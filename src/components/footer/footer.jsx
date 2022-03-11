@@ -25,12 +25,12 @@ const Footer = () => {
       <div className="informations">
         <div className="get-in-touch">
           <h3 className="footer-title">Get in touch</h3>
-          <h4> address@address.com</h4>
-          <h4> second.address@address.com</h4>
+          <h4> info@jsgstad.com</h4>
+          <h4> kunder@jsgstad.com</h4>
         </div>
         <div className="address">
           <h3 className="footer-title">Our bussiness adress</h3>
-          <h4> Sweden</h4>
+          <h4> Sweden, Hässelby Villastad </h4>
           <h4> Something Str. 22</h4>
         </div>
       </div>

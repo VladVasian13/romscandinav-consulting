@@ -20,13 +20,13 @@ const Contact = () => {
               <h2>
                 <i className="fas fa-phone phone-icon"></i>SWE:{" "}
                 <span className="phone-numbers">
-                  <a href="tel:+40 753 222 433">+333 2 222 4433</a>
+                  <a href="tel:+46 70 018 42 16">+46 70 018 42 16</a>
                 </span>
               </h2>
               <h2>
                 <i className="fas fa-phone phone-icon"></i>ROU:{" "}
                 <span className="phone-numbers">
-                  <a href="tel:+40 753 222 433">+40 753 222 433 </a>
+                  <a href="tel:+40 726 841 602">+40 726 841 602 </a>
                 </span>
               </h2>
             </div>
@@ -78,7 +78,7 @@ const Contact = () => {
               To schedule time to speak with one of our sales
               representatives,complete the form and then click submit.
             </h3>
-            <form className="formular" name="contact" method="post">
+            <form className="formular" name="contact" method="post" netlify >
               <div className="inputs">
                 <div className="form-col1">
                   <div>
