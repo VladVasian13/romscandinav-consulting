@@ -78,7 +78,8 @@ const Contact = () => {
               To schedule time to speak with one of our sales
               representatives,complete the form and then click submit.
             </h3>
-            <form className="formular" name="Contact" method="post" netlify >
+            <form className="formular" name="contact-form" method="post" data-netlify="true" >
+              <input type="hidden" name="form-name" value="contact-form" />
               <div className="inputs">
                 <div className="form-col1">
                   <div>
@@ -88,6 +89,7 @@ const Contact = () => {
                       type="text"
                       clasa="input-contact"
                       sendDataToParent={sendDataToParent}
+                      name = "first-name"
                     />
                   </div>
                   <div>
@@ -96,6 +98,7 @@ const Contact = () => {
                       placeholder="Email"
                       type="email"
                       clasa="input-contact"
+                      name = "email"
                     />
                   </div>
                   <div>
@@ -104,6 +107,7 @@ const Contact = () => {
                       placeholder="Company Name"
                       type="text"
                       clasa="input-contact"
+                      name = "company-name"
                     />
                   </div>
                 </div>
@@ -114,6 +118,7 @@ const Contact = () => {
                       placeholder="Last Name"
                       type="text"
                       clasa="input-contact"
+                      name = "last-name"
                     />
                   </div>
                   <div>
@@ -122,6 +127,7 @@ const Contact = () => {
                       placeholder="Phone Number"
                       type="number"
                       clasa="input-contact"
+                      name = "phone"
                     />
                   </div>
                   <div>
@@ -130,6 +136,7 @@ const Contact = () => {
                       placeholder="Website"
                       type="text"
                       clasa="input-contact"
+                      name = "website"
                     />
                   </div>
                 </div>
@@ -141,6 +148,7 @@ const Contact = () => {
                   required
                   multiline
                   rows={6}
+                  name = "text"
                 />
               </div>
               <div className="div-button">

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./input-form.css";
 import TextField from "@mui/material/TextField";
 
-const InputForm = ({ placeholder, type, clasa, sendDataToParent }) => {
+const InputForm = ({ placeholder, type, clasa, sendDataToParent,name }) => {
   const [errored, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -30,6 +30,7 @@ const InputForm = ({ placeholder, type, clasa, sendDataToParent }) => {
         variant="outlined"
         helperText={errorMessage}
         error={errored}
+        name={name}
         required
       />
     </div>
